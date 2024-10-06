@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 300px;
+}
+
+.menu-card::before {
+    content: "yummyyyy..!";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #025c0eef;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu-item::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin: 0;
+    color:peru;
+
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background:  #025c0eef;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <h1>Restaurant Menu</h1>
+        <div class="menu-item">
+            <h2>Chicken Magestics</h2>
+            <p>Delicious chicken Magestics served with a side of vegetables.</p>
+            <span class="price">$15.99</span>
+        </div>
+        <div class="menu-item">
+            <h2>Roasted prawns</h2>
+            <p>Roasted Prawns with spicy ingredians.</p>
+            <span class="price">$20.99</span>
+        </div>
+        <div class="menu-item">
+            <h2>Choco sizzler</h2>
+            <p>Fresh Dark choco sizzler with Caesar dressing and croutons.</p>
+            <span class="price">$12.99</span>
+        </div>
+    </div>
+</body>
+</html>
